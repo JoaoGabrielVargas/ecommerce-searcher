@@ -5,7 +5,7 @@ const SearchController = require('./controller/SearchController')
 
 const router = Router();
 
-router.post('/', SearchController.createSearch );
-router.get('/', SearchController.getAll);
+router.post('/store', SearchController.createSearch );
+router.get('/', SearchController.getByQuery);
 
 module.exports = router; 

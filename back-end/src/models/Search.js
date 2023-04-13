@@ -4,18 +4,11 @@ class Search extends Model {
     static init(sequelize) {
         super.init({
             title: DataTypes.STRING,
-        },
-        {
-            description: DataTypes.STRING,
-        },
-        {
-            thumbnail: DataTypes.STRING
-        },
-        {
-            price: DataTypes.STRING
-        },
-        {
-            permalink: DataTypes.STRING
+            description: DataTypes.TEXT,
+            thumbnail: DataTypes.STRING,
+            price: DataTypes.STRING,
+            permalink: DataTypes.STRING,
+            id: {type: DataTypes.STRING, primaryKey: true, unique: false}
         },
         {
             sequelize
