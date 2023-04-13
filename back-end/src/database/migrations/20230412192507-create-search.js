@@ -10,18 +10,22 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
       },
-      search: {
+      title: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      created_at: {
-        type: Sequelize.DATE,
-        allowNull: false,
+      description: {
+        type: Sequelize.STRING,
       },
-      updated_at: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      }
+      thumbnail: {
+        type: Sequelize.STRING,
+      },
+      price: {
+        type: Sequelize.STRING,
+      },
+      permalink: {
+        type: Sequelize.STRING,
+      },
     });
      
   },
